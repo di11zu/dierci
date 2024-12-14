@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+        }
+        #top{
+            background-color: #212529;
+            width: 100%;
+            color:white;
+            display: flex;
+            line-height: 50px;
+            justify-content: space-between;
+        }
+        #top ul{
+            display: flex;
+            list-style-type: none;
+            margin-right: 100px;
+        }
+        #top h2{
+            padding-left: 100px;
+        }
+        #top ul li{
+            margin-right: 10px;
+            color:#ddd;
+        }
+        #main{
+            background-color: #212529;
+            display: flex;
+            width:100%;
+            padding-bottom: 50px;
+        }
+        #main-left{
+            width:65%;
+            margin-left: 100px;
+            margin-top: 200px;
+        }
+        #main-left h2{
+            color: white;
+            font-size: 40px;
+        }
+        #main-left p{
+            font-size:16px;
+            color: white;
+            padding: 15px 0;
+        }
+        #main-left span{
+            color: #ffc107;
+        }
+        #main-left a{
+            color: white;
+            background-color: #0d6efd;
+            padding: 10px 20px;
+            font-size: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        #main-right{
+            width:60%;
+            margin-right: 100px;
+        }
+        #three{
+            width: 100%;
+            display: flex;
+            padding-top: 40px; 
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        #three>div{
+            padding: 10px 30px;
+            width: 33.33%;
+
+        }
+        #le{
+            background-color: #212529;
+            margin-right: 50px;
+        }
+        #mid{
+            background-color: #343a40;
+            margin-right: 50px;
+        }
+        #le,#rig p,h2{
+            color: #dee2e6;
+        
+        }
+
+        #rig{
+            background-color: #212529;
+            
+        }
+        #le a,#rig a{
+            text-decoration: none;
+            background-color: #0d6efd;
+            color: white;
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+        #mid a{
+            text-decoration: none;
+            background-color: #212529;
+            color: white;
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+        @media(max-width:720px){
+            #main{
+                flex-direction: column;
+            }
+            #main-right img{
+            margin-left: 100px;
+            width:120%;
+            }
+            #top{
+                flex-direction: column;
+            }
+            #top ul{
+                margin-left: 100px;
+                margin-right: 0;
+                flex-direction: column;
+            }
+            
+        }
+        @media (max-width:840px) {
+            #three{
+                flex-direction: column;
+            }
+            #three>div{
+                width: auto;
+            }
+            #le,#mid{
+                margin-right: 0px;
+                margin-bottom: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <h2>WUSHIXUNHENSHUAI</h2>
+        <ul>
+            <li>Learning</li>
+            <li>questions</li>
+            <li>instructor</li>
+            <li>contact us</li>
+        </ul>
+    </div>
+    <div id="main">
+        <div id="main-left">
+            <h2>Become a Web <span style="color: yellow;">Developer</span></h2>  
+            <p>we focus on teaching our students the latest and greatest technologies to prepare them for the first role.</p>
+            <button style="color: #fff;
+            background-color: #0d6efd;
+            border-color: #0d6efd;padding: .5rem .5rem;margin-top: 20px;
+            font-size: 1rem;
+            border-radius: .3rem;"
+            margin-bottom:30px;>
+                start enrollment
+            </button>
+
+        </div>
+        <div id="main-right">
+            <img src="./family-confirming-evacuation-site-svgrepo-com.svg" alt="">
+        </div>
+    </div>
+    <div id="three">
+        <div id="le">
+            <h2>第一次实验</h2>
+            <p>贵财网页</p>
+            <a href=" https://di11zu.github.io/guicaiwy/gufe.html">点击访问</a>
+        </div>
+        <div id="mid">
+            <h2>第三次实验</h2>
+            <P style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur itaque quasi molestias maiores magni asperiores.</P>
+            <a href="https://di11zu.github.io/disanci/todos%20-plain.html">点击访问</a>
+        </div>
+        <div id="rig">
+            <h2>第四次实验</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur itaque quasi molestias maiores magni asperiores.</p>
+            <a href="https://di11zu.github.io/disici/calculator.html">点击访问</a>
+        </div>
+    </div>
+</body>
+</html>
